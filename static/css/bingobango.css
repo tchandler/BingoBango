@@ -1,0 +1,18 @@
+table.bingotable {
+	width: 100%;
+}
+
+table.bingotable th, table.bingotable td {
+	text-align: center;
+}
+
+/*table.bingotable td {
+	width: 45px;
+	height: 45px;
+	border: 1px solid black;
+}
+*/
+table.bingotable td:hover, table.bingotable .selected {
+	background-color: blue;
+	color: white;
+}
