@@ -6,7 +6,9 @@
                  [ring/ring-core "1.2.0"]
                  [ring/ring-json "0.2.0"]]
   :plugins [[lein-ring "0.8.11"]]
-  :ring {:handler bingobango.handler/app}
+  :ring {:handler bingobango.handler/app
+         :nrepl {:start? true
+                 :port 9998}}
   :profiles
   {:dev {:dependencies [[javax.servlet/servlet-api "2.5"]
                         [ring-mock "0.1.5"]]}})
